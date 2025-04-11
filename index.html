@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOLTAS – NFC Vizitinė</title>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #222;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            padding: 20px;
+        }
+        header img {
+            max-width: 160px;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content p {
+            max-width: 600px;
+            margin: 0 auto 30px;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .btn {
+            display: inline-block;
+            margin: 10px auto;
+            padding: 12px 24px;
+            background-color: #ddd;
+            color: #222;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background-color: #ccc;
+        }
+        footer {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://www.goltas.lt/wp-content/uploads/2023/05/cropped-G-logo.png" alt="Goltas logotipas">
+    </header>
+    <div class="content">
+        <p><strong>NFC pakabukai įmonėms</strong><br>
+        Išmanus sprendimas šiuolaikinei komunikacijai – NFC pakabukas veikia kaip jūsų skaitmeninė vizitinė, leidžianti vos palietus atverti kontaktus, nuorodas ar prezentacijas.<br><br>
+        Idealiai tinka parodoms, renginiams ar tiesiog kasdieniam naudojimui. Minimalu, patogu ir įspūdinga.
+        </p>
+
+        <a class="btn" href="mailto:info@goltas.lt">📧 Rašyk mums – info@goltas.lt</a>
+        <a class="btn" href="tel:+37064544661">📞 Skambink – +37064544661</a>
+    </div>
+    <footer>
+        Informacija prižiūrima <a href="https://www.goltas.lt" target="_blank">www.goltas.lt</a>
+    </footer>
+
+    <script>
+    // Vienkartinis puslapio atnaujinimas
+    if (!sessionStorage.getItem('reloaded')) {
+      sessionStorage.setItem('reloaded', 'true');
+      window.location.reload(true);
+    }
+    </script>
+</body>
+</html>
