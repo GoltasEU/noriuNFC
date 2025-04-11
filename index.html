@@ -63,8 +63,8 @@
         Idealiai tinka parodoms, renginiams ar tiesiog kasdieniam naudojimui. Minimalu, patogu ir įspūdinga.
         </p>
 
-        <a class="btn" href="mailto:info@goltas.lt">📧 Rašyk mums – info@goltas.lt</a>
-        <a class="btn" href="tel:+37064544661">📞 Skambink – +37064544661</a>
+        <span id="goltas-email"></span>
+        <span id="goltas-phone"></span>
 
         <img src="https://www.goltas.lt/wp-content/uploads/2025/04/Pakabukas-su-NFC.png" 
              alt="Įmonių logotipai ant individualių NFC pakabukų – reklaminiai raktų pakabukai su NFC technologija" 
@@ -81,5 +81,15 @@
       window.location.reload(true);
     }
     </script>
+
+<script>
+  const gUser = "info";
+  const gDomain = "goltas.lt";
+  const gPhone = "+37064544661";
+  document.getElementById("goltas-email").innerHTML =
+    '<a class="btn" href="mailto:' + gUser + '@' + gDomain + '">📧 Rašyk mums – ' + gUser + '@' + gDomain + '</a>';
+  document.getElementById("goltas-phone").innerHTML =
+    '<a class="btn" href="tel:' + gPhone + '">📞 Skambink – ' + gPhone + '</a>';
+</script>
 </body>
 </html>
